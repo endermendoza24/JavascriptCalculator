@@ -7,3 +7,4 @@ This is  a calculator made with CSS, HTML, and Javascript. Basic calculator.
 
 -- se procede a agregarle los estilos css a la calculadora
 -- Se procede a escribir el codigo de javascript para la interaccion de esta calculadora.
+-- Proyecto tomado de un tutorial de youtube
