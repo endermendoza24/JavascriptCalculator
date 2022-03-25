@@ -5,12 +5,18 @@ class Display {
         this.calculador = new Calculadora();
         this.tipoOperacion = undefined;
         this.valorActual = '';
+        
         this.valorAnterior = '';
+        
         this.signos = {
             sumar: '+',
-            dividir: '%',
+            dividir: '/',
             multiplicar: 'x',
             restar: '-', 
+            potencia:'^',
+            raiz:'√',
+            facto:"!",
+            log:'log(',
         }
     }
 
@@ -31,6 +37,7 @@ class Display {
         this.tipoOperacion = tipo;
         this.valorAnterior = this.valorActual || this.valorAnterior;
         this.valorActual = '';
+        
         this.imprimirValores();
     }
 
@@ -48,8 +55,11 @@ class Display {
     calcular() {
         const valorAnterior = parseFloat(this.valorAnterior);
         const valorActual = parseFloat(this.valorActual);
+        
 
-        if( isNaN(valorActual)  || isNaN(valorAnterior) ) return
+        if( isNaN(valorActual)  || isNaN(valorAnterior)) return
         this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
     }
+
+    
 }

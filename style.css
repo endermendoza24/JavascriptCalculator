@@ -16,8 +16,8 @@ body{
 .calculadora{
     display: grid;
     grid-template-columns: repeat(4,75px);
-    grid-template-rows: 160px repeat(5, 75px);
-    background-color: #009196;
+    grid-template-rows: 160px repeat(6, 75px);
+    background-color: #9B59B6 ;
     padding: 15px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
@@ -29,14 +29,17 @@ button{
     border-radius: 32px;
     font-size: 1.5em;
     border: none;
-    background-color: #009196;
-    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+    background-color: #9B59B6 ;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #730D99  ;
+    transition: all .4s;
+    font-weight: bolder;
 }
+
 .col-2{
     grid-column: span 2;
 }
 button:active{
-    background-color: #006f54;
+    background-color: #EFAC1C ;
 }
 button:focus{
     outline: none;
